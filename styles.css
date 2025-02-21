@@ -1,32 +1,65 @@
 body {
-    background-image: url('Screenshot\ 2025-02-21\ 11.10.20.png');
-    background-size: cover;  /* Asegura que la imagen cubra toda el área */
-    background-position: center center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 100vh;  /* Asegura que el fondo ocupe toda la altura de la ventana */
-    margin: 0;  /* Elimina márgenes por defecto */
-  }
-  body.bajar {
-    display: flex;               /* Usamos flexbox para centrar */
-    justify-content: center;     /* Centra horizontalmente */
-    align-items: center;         /* Centra verticalmente */
-    height: 100vh;               /* Ocupa toda la altura de la ventana */
-    margin: 0;
-    animation: bajarAnimacion 2s ease-out;  /* Aplica la animación */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+background-image: url('Screenshot\ 2025-02-21\ 11.10.20.png');
+
+background-size: cover; /* Asegura que la imagen cubra toda el área */
+
+background-position: center center; /* Centra la imagen */
+
+background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+
+margin: 0; /* Elimina márgenes por defecto */
+
 }
 
-@keyframes bajarAnimacion {
-    0% {
-        transform: translateY(-100px); /* Empieza arriba */
-        opacity: 0;                    /* Comienza invisible */
-    }
-    50% {
-        transform: translateY(-20px); /* Baja un poco */
-        opacity: 0.7;                  /* Aumenta la opacidad */
-    }
-    100% {
-        transform: translateY(0);     /* Termina centrado en su lugar */
-        opacity: 1;                   /* Totalmente visible */
-    }
+body.bajar {
+
+display: flex; /* Usamos flexbox para centrar */
+
+justify-content: center; /* Centra horizontalmente */
+
+align-items: center; /* Centra verticalmente */
+
+height: 100vh; /* Ocupa toda la altura de la ventana */
+
+margin: 0;
+
+animation: bajarAnimacion 2s ease-out; /* Aplica la animación */
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
+
+
+@keyframes bajarAnimacion {
+
+0% {
+
+transform: translateY(-100px); /* Empieza arriba */
+
+opacity: 0; /* Comienza invisible */
+
+}
+
+50% {
+
+transform: translateY(-20px); /* Baja un poco */
+
+opacity: 0.7; /* Aumenta la opacidad */
+
+}
+
+100% {
+
+transform: translateY(0); /* Termina centrado en su lugar */
+
+opacity: 1; /* Totalmente visible */
+
+}
+
+}
+
+
+
